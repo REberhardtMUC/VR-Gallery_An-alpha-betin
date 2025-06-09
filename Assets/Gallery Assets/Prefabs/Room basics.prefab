@@ -427,8 +427,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CustomReticle
       value: 
-      objectReference: {fileID: 8656087483511947524, guid: 50f8d835961353c4a8e0c4b77d7f8876,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 9217523036661425523, guid: 94d55909fa7ec0e41ae3637dbe2bf3f2,
         type: 3}
       propertyPath: m_LocalPosition.x
