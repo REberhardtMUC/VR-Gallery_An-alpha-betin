@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f4f8e67cc117a344fa012d6149361b4a, type: 2}
+  - {fileID: 2100000, guid: 26a09469601989d4e9394f08594bc5cb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -256,7 +256,7 @@ MonoBehaviour:
   playAtStart: 0
   videoMaterial: {fileID: 0}
   videoClips:
-  - {fileID: 32900000, guid: fcecd2034b7fa5143857ba995572a417, type: 3}
+  - {fileID: 32900000, guid: a1e89dd65163ffc4aa369ad556f3ff2e, type: 3}
 --- !u!1 &4348831482539752425
 GameObject:
   m_ObjectHideFlags: 0
