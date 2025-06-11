@@ -256,7 +256,7 @@ MonoBehaviour:
   playAtStart: 0
   videoMaterial: {fileID: 0}
   videoClips:
-  - {fileID: 32900000, guid: a1e89dd65163ffc4aa369ad556f3ff2e, type: 3}
+  - {fileID: 32900000, guid: 1444ca8d47bff52448cc1f5840dcc488, type: 3}
 --- !u!1 &4348831482539752425
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,6 +418,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8526186624703290325}
     m_Modifications:
+    - target: {fileID: 987729548110837426, guid: 94d55909fa7ec0e41ae3637dbe2bf3f2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e27459c717de0274da6566065bcde423, type: 2}
     - target: {fileID: 1607803921317552081, guid: 94d55909fa7ec0e41ae3637dbe2bf3f2,
         type: 3}
       propertyPath: m_Name
@@ -446,7 +451,7 @@ PrefabInstance:
     - target: {fileID: 9217523036661425523, guid: 94d55909fa7ec0e41ae3637dbe2bf3f2,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.009748841
+      value: 0.011626378
       objectReference: {fileID: 0}
     - target: {fileID: 9217523036661425523, guid: 94d55909fa7ec0e41ae3637dbe2bf3f2,
         type: 3}
@@ -456,7 +461,7 @@ PrefabInstance:
     - target: {fileID: 9217523036661425523, guid: 94d55909fa7ec0e41ae3637dbe2bf3f2,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.99995255
+      value: -0.99993247
       objectReference: {fileID: 0}
     - target: {fileID: 9217523036661425523, guid: 94d55909fa7ec0e41ae3637dbe2bf3f2,
         type: 3}
@@ -471,7 +476,7 @@ PrefabInstance:
     - target: {fileID: 9217523036661425523, guid: 94d55909fa7ec0e41ae3637dbe2bf3f2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -181.117
+      value: -178.668
       objectReference: {fileID: 0}
     - target: {fileID: 9217523036661425523, guid: 94d55909fa7ec0e41ae3637dbe2bf3f2,
         type: 3}
