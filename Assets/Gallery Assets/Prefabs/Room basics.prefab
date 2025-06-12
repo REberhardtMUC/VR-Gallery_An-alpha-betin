@@ -375,6 +375,77 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &5313877177571706896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3897589797835456974}
+  - component: {fileID: 7552602405567089117}
+  - component: {fileID: 2833175190066031895}
+  m_Layer: 0
+  m_Name: Context_Collider_SetTxt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3897589797835456974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5313877177571706896}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -20, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2014060664318586086}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7552602405567089117
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5313877177571706896}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5, y: 40, z: 1.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2833175190066031895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5313877177571706896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea312fff7e5683a47abb2e7f86293cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtPoetrySnipplet: {fileID: 0}
+  txt_currentVideo: 'Ich bin An-alpha-betin.<br>Ich bete Alphatiere nicht an <br>und
+    kann sie nicht lesen. '
+  txtMoreInfo: {fileID: 0}
+  txt_currentUIinfo: TEST TEST
 --- !u!1 &6438837733956035820
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 9217523036661425523, guid: 94d55909fa7ec0e41ae3637dbe2bf3f2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3897589797835456974}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94d55909fa7ec0e41ae3637dbe2bf3f2, type: 3}
 --- !u!4 &2014060664318586086 stripped

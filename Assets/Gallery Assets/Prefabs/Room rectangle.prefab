@@ -136,6 +136,78 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &733005289970186383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7927734327153709254}
+  - component: {fileID: 8119704934704206276}
+  - component: {fileID: 4153616049254294731}
+  m_Layer: 0
+  m_Name: Context_Collider_SetTxt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7927734327153709254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733005289970186383}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.9997716, z: -0, w: -0.021373939}
+  m_LocalPosition: {x: 3.494472, y: -20, z: 3.372854}
+  m_LocalScale: {x: 0.9987534, y: 1, z: 1.0012498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2843217704409066699}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8119704934704206276
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733005289970186383}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5, y: 40, z: 1.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4153616049254294731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733005289970186383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea312fff7e5683a47abb2e7f86293cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtPoetrySnipplet: {fileID: 0}
+  txt_currentVideo: "Das Beta-Tier sagt zum Omega:<br>\u201ESchau mich an und lerne
+    von mir.<br>Allzeit erreichbar,<br>allzeit bereit,<br>nicht widersprechen,<br>immer
+    dienen."
+  txtMoreInfo: {fileID: 0}
+  txt_currentUIinfo: TEST TEST
 --- !u!1 &1275016178217229075
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,7 +868,8 @@ Transform:
   m_LocalPosition: {x: -0.696, y: -3.98, z: 4.09}
   m_LocalScale: {x: 0.5000949, y: -0.05, z: 0.9996198}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7927734327153709254}
   m_Father: {fileID: 3326843521814856269}
   m_LocalEulerAnglesHint: {x: 0, y: -181.117, z: 0}
 --- !u!33 &679997872110764252
