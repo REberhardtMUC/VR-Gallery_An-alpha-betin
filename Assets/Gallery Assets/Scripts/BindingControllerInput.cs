@@ -18,7 +18,7 @@ public class BindingControllerInput : MonoBehaviour
         showMenuAction.action.performed += ToggleMenu;
 
         showInfoAction.action.Enable();
-        showInfoAction.action.performed += ToggleMenu;
+        showInfoAction.action.performed += ToggleInfo;
     }
     private void OnDestroy()
     {
@@ -26,11 +26,14 @@ public class BindingControllerInput : MonoBehaviour
         showMenuAction.action.performed -= ToggleMenu;
 
         showInfoAction.action.Disable();
-        showInfoAction.action.performed -= ToggleMenu;
+        showInfoAction.action.performed -= ToggleInfo;
     }
     private void ToggleMenu(InputAction.CallbackContext context)
     {
         menuPanel.SetActive(!menuPanel.activeSelf);
+    }
+    private void ToggleInfo(InputAction.CallbackContext context)
+    {
         infoPanel.SetActive(!infoPanel.activeSelf);
     }
 }
