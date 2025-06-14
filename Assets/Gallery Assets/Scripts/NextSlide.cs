@@ -14,8 +14,6 @@ public class NextSlide : MonoBehaviour
     private Image img_BGintroPanel;
     private int introSlide = 0;
 
-
-
     private void Start()
     {
         img_BGintroPanel = introPanel.GetComponent<Image>();
