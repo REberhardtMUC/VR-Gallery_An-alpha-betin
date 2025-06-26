@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/intro Gallery An-alpha-betin 1.unity
+    path: Assets/Scenes/intro Tutorial.unity
     guid: bfd63df0ca84b2241abeffe98b7b9977
   - enabled: 1
     path: Assets/Scenes/Gallery An-alpha-betin.unity
