@@ -2,61 +2,131 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class BindingControllerInput : MonoBehaviour
+namespace VR_gallery
 {
-    public GameObject menuPanel;
-    public GameObject introPanel;
-    private Image img_introPanel;
-    public InputActionReference showMenuAction;
-
-    public Sprite img_nextSlide;
-
-    public GameObject infoPanel;
-    public Text txt_moreInfo;
-    public InputActionReference showInfoAction;
-
-    private int nr_slide = 1;
-
-    private void Awake()
+    public class BindingControllerInput : MonoBehaviour
     {
-        showMenuAction.action.Enable();
-        showMenuAction.action.performed += ToggleMenu;
+        public InputActionReference showNextSlideAction;
+        [SerializeField] public GameObject[] introSlides;
+        private GameObject currentSlide;
 
-        showInfoAction.action.Enable();
-        showInfoAction.action.performed += ToggleInfo;
+        [Space(20)]
 
-        img_introPanel = introPanel.GetComponent<Image>();
-    }
-    private void OnDestroy()
-    {
-        showMenuAction.action.Disable();
-        showMenuAction.action.performed -= ToggleMenu;
+        //public GameObject img_HelpMenue;
+        public InputActionReference showMenueAction;
 
-        showInfoAction.action.Disable();
-        showInfoAction.action.performed -= ToggleInfo;
-    }
-    private void ToggleMenu(InputAction.CallbackContext context)
-    {
-        if (nr_slide == 1)
+        [Space(20)]
+
+        //public GameObject menuPanel;
+        public GameObject img_poetry;
+        public InputActionReference showPoetryAction;
+
+
+        [Space(20)]
+        public GameObject img_moreInfo;
+        public InputActionReference showInfoAction;
+
+        private int nr_slide;
+
+        private void Awake()
         {
-            // nächstes Slide
-            img_introPanel.sprite = img_nextSlide;
+            showNextSlideAction.action.Enable();
+            showNextSlideAction.action.performed += ShowNextSlide;
+
+            showMenueAction.action.Enable();
+            showMenueAction.action.performed += ToggleHelpMenu;
+
+            showPoetryAction.action.Enable();
+            showPoetryAction.action.performed += TogglePoetryPanel;
+
+            showInfoAction.action.Enable();
+            showInfoAction.action.performed += ToggleInfo;
+
         }
-        else if (nr_slide == 2)
+
+        private void Start()
         {
-            introPanel.SetActive(false);
+            currentSlide = introSlides[0];
+            nr_slide = 1;
         }
-        else
+        private void OnDestroy()
         {
-            menuPanel.SetActive(!menuPanel.activeSelf);
+            showNextSlideAction.action.Disable();
+            showNextSlideAction.action.performed -= ShowNextSlide;
+
+            showMenueAction.action.Disable();
+            showMenueAction.action.performed -= ToggleHelpMenu;
+
+            showPoetryAction.action.Disable();
+            showPoetryAction.action.performed -= TogglePoetryPanel;
+
+            showInfoAction.action.Disable();
+            showInfoAction.action.performed -= ToggleInfo;
         }
-        nr_slide++;
-    }
-    private void ToggleInfo(InputAction.CallbackContext context)
-    {
-            infoPanel.SetActive(!infoPanel.activeSelf);
+        private void ShowNextSlide(InputAction.CallbackContext context)
+        {
+            switch (nr_slide)
+            {
+                case 1:
+                    currentSlide = introSlides[1];
+                    break;
+                case 2:
+                    currentSlide = introSlides[2];
+                    break;
+                case 3:
+                    currentSlide = introSlides[3];
+                    break;
+                case 4:
+                    currentSlide = introSlides[4];
+                    break;
+                case 5:
+                    currentSlide = introSlides[5];
+                    break;
+                case 6:
+                    currentSlide = introSlides[6];
+                    break;
+                case 7:
+                    currentSlide = introSlides[7];
+                    break;
+            }
+        
+            if (nr_slide == 8)
+            {
+                SceneManager.LoadScene(1);
+            }
+            else
+            {
+                foreach (var slide in introSlides)
+                {
+                    if (slide == currentSlide)
+                    {
+                        slide.SetActive(true);
+                    }
+                    else
+                    {
+                        slide.SetActive(false);
+                    }
+                }
+            }
+            nr_slide++;
+        }
+
+        private void ToggleHelpMenu(InputAction.CallbackContext context)
+        {
+            currentSlide.SetActive(!currentSlide.activeSelf);
+        }
+        private void TogglePoetryPanel(InputAction.CallbackContext context)
+        {
+            img_poetry.SetActive(!img_poetry.activeSelf);
+        }
+        private void ToggleInfo(InputAction.CallbackContext context)
+        {
+            if (SetPoetryTxt.videoHasMoreInfo)
+                img_moreInfo.SetActive(!img_moreInfo.activeSelf);
+        }
     }
 }

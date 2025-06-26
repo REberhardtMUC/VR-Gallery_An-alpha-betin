@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Slide01
+  - Slide02
+  - Slide03
+  - Slide04
+  - Slide05
+  - Slide06
+  - Slide07
   layers:
   - Default
   - TransparentFX

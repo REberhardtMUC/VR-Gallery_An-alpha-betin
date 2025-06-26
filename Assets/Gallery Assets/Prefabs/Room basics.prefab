@@ -857,7 +857,8 @@ MonoBehaviour:
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
   m_FocusMode: 1
-  m_CustomReticle: {fileID: 0}
+  m_CustomReticle: {fileID: 8926329500081864109, guid: 5c805b948c7ab714294f60ba854bf1b3,
+    type: 3}
   m_AllowGazeInteraction: 0
   m_AllowGazeSelect: 0
   m_OverrideGazeTimeToSelect: 0
@@ -1015,7 +1016,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 73b974d5797ab3445882dde8c0999ed2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b9425111e06547a418496d70767939dd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

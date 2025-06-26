@@ -792,9 +792,36 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Show Infos",
+                    "name": "Show Poetry",
                     "type": "Button",
                     "id": "b733a83d-f35b-43c0-9564-fcf8d243ffd0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NextSlide",
+                    "type": "Button",
+                    "id": "12b835fd-a0c5-443f-9aa5-cd1818a135a4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Show moreInfo",
+                    "type": "Button",
+                    "id": "bb27646e-38b1-43e3-b213-550fce22499d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PlayPauseVideo",
+                    "type": "Button",
+                    "id": "9c8c04e4-e462-4bc1-b726-447d670e6968",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -985,7 +1012,40 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
-                    "action": "Show Infos",
+                    "action": "Show Poetry",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5aa0ec1d-086d-4d9c-8704-b1e7921ba21a",
+                    "path": "<XRController>{LeftHand}/{TriggerButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "NextSlide",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "78b19839-7f6a-4089-9bf4-b7274c8363ec",
+                    "path": "<XRController>{LeftHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Show moreInfo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a6aefae8-6f7f-4fbc-9353-53688fae4dfb",
+                    "path": "<XRController>{RightHand}/{TriggerButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "PlayPauseVideo",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
