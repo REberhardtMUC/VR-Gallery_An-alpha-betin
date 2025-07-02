@@ -13,6 +13,7 @@ namespace VR_gallery
         //Text from poetry slam that the video is translating into a story
         public GameObject txtPoetrySnipplet;
         [SerializeField] string txt_currentVideo;
+        [SerializeField] GameObject iconHasMoreInfo;
 
         [Space(20)]
 
@@ -20,15 +21,20 @@ namespace VR_gallery
         public GameObject txtMoreInfo;
         [SerializeField] string txt_currentUIinfo;
         [SerializeField] bool hasMoreInfo;
-        public static bool videoHasMoreInfo;
+        //public bool HasMoreInfo {get { return hasMoreInfo; } }
 
-        private void Start()
-        {
-            videoHasMoreInfo = hasMoreInfo;
-        }
 
         private void OnTriggerEnter(Collider other)
         {
+            if (hasMoreInfo)
+            {
+                iconHasMoreInfo.SetActive(true);
+            }
+            else
+            {
+                iconHasMoreInfo.SetActive(false);
+            }
+
             txtPoetrySnipplet.GetComponent<TextMeshProUGUI>().text = txt_currentVideo;
             txtMoreInfo.GetComponent<TextMeshProUGUI>().text = txt_currentUIinfo;
         }
