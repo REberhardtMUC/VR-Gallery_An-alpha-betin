@@ -7,6 +7,7 @@ using UnityEngine.Video;
 public class TogglePlayPauseImg : MonoBehaviour
 {
     [SerializeField] GameObject Leinwand;
+    [SerializeField] GameObject mouseOverPLAY;
     VideoPlayer vPlayer;
     public Sprite img_PauseButton;
     public Sprite img_PlayButton;
@@ -16,6 +17,11 @@ public class TogglePlayPauseImg : MonoBehaviour
     private void Start()
     {
         vPlayer = Leinwand.GetComponent<VideoPlayer>();
+    }
+
+    public void OnMouseOver()
+    {
+        mouseOverPLAY.SetActive(true);
     }
 
     public void ChangeButtonImage()
