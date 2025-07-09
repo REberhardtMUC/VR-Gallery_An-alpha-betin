@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
@@ -19,9 +20,16 @@ public class TogglePlayPauseImg : MonoBehaviour
         vPlayer = Leinwand.GetComponent<VideoPlayer>();
     }
 
-    public void OnMouseOver()
+    public void OnPointerEnter()
     {
         mouseOverPLAY.SetActive(true);
+    }
+
+
+
+    public void OnMouseOver()
+    {
+        //mouseOverPLAY.SetActive(true);
     }
 
     public void ChangeButtonImage()
