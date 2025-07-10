@@ -542,6 +542,8 @@ MonoBehaviour:
   txtMoreInfo: {fileID: 0}
   txt_currentUIinfo: 
   hasMoreInfo: 0
+  btnPlay: {fileID: 8893338358026682419}
+  leinwand: {fileID: 3579822714058910443}
 --- !u!1 &6438837733956035820
 GameObject:
   m_ObjectHideFlags: 0
