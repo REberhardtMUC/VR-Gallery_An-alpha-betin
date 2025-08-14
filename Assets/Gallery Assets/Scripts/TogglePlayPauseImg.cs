@@ -46,7 +46,7 @@ public class TogglePlayPauseImg : MonoBehaviour
     }
     private void Update()
     {
-        if (vPlayer.isActiveAndEnabled == false)
+        if (vPlayer.isPlaying == false)
         {
             button.image.sprite = img_PlayButton;
         }
