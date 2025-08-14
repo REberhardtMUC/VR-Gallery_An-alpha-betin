@@ -13,12 +13,12 @@ public class TogglePlayPauseImg : MonoBehaviour
     public Sprite img_PauseButton;
     public Sprite img_PlayButton;
     public Button button;
-    private int initial = 0;
+    public static int initial = 0;
 
     private void Start()
     {
         vPlayer = Leinwand.GetComponent<VideoPlayer>();
-    }
+    } 
 
     public void OnPointerEnter()
     {
@@ -40,6 +40,13 @@ public class TogglePlayPauseImg : MonoBehaviour
             initial++;
         }
         else if (vPlayer.isPlaying == false)
+        {
+            button.image.sprite = img_PlayButton;
+        }
+    }
+    private void Update()
+    {
+        if (vPlayer.isActiveAndEnabled == false)
         {
             button.image.sprite = img_PlayButton;
         }

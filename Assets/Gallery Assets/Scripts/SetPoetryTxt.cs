@@ -23,17 +23,13 @@ namespace VR_gallery
         public GameObject txtMoreInfo;
         [SerializeField] string txt_currentUIinfo;
         [SerializeField] bool hasMoreInfo;
-        //public bool HasMoreInfo {get { return hasMoreInfo; } }
 
         [Header("Set canvas for stopping video when leaving")]
-        [SerializeField] GameObject btnPlay;
         [SerializeField] GameObject leinwand;
-        private Button buttonComponentPlay;
-
-        private void Start()
-        {
-            buttonComponentPlay = btnPlay.GetComponent<Button>();
-        }
+        [SerializeField] Material still_Material;
+        [SerializeField] Button btn_PlayPause;
+        [SerializeField] Sprite img_Play;
+        [SerializeField] Sprite img_Pause;
 
         private void OnTriggerEnter(Collider other)
         {
@@ -53,7 +49,9 @@ namespace VR_gallery
         private void OnTriggerExit(Collider other)
         {
             leinwand.GetComponent<PlayVideo>().Stop();
-            //buttonComponentPlay.Toggle
+            leinwand.GetComponent<MeshRenderer>().material = still_Material;
+            btn_PlayPause.image.sprite = img_Play;
+            TogglePlayPauseImg.initial = 0;
         }
     }
 }
