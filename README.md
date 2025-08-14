@@ -5,6 +5,8 @@ This project is in an early stage, not ready for distribution yet. But it builds
 
 (Remark: LFS is needed when downloading this project)
 
-https://github.com/user-attachments/assets/0bfb3b15-1f4e-4840-9f93-5dcd0bcb4e56
+In the teaser video you can see the How-To-Play Tutorial and the first steps in the gallery.
 
+Note: Please turn on the sound.
 
+https://github.com/user-attachments/assets/3d339c7e-c1c8-4d2f-b285-1678bd42d52d
