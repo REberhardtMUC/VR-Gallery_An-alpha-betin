@@ -30,6 +30,9 @@ namespace VR_gallery
         public GameObject icon_Y_moreInfo;
         public InputActionReference showInfoAction;
 
+        [Header("Zurück zu Hauptmenü")]
+        public InputActionReference showMainMenuAction;
+
         private int nr_slide;
         private string txt_moreInfo;
 
@@ -47,7 +50,11 @@ namespace VR_gallery
             showInfoAction.action.Enable();
             showInfoAction.action.performed += ToggleInfo;
 
+            showMainMenuAction.action.Enable();
+            showMainMenuAction.action.performed += BackToMainMenu;
+
         }
+
 
         private void Start()
         {
@@ -96,11 +103,14 @@ namespace VR_gallery
                     case 7:
                         currentSlide = introSlides[7];
                         break;
+                    case 8:
+                        currentSlide = introSlides[8];
+                        break;
                 }
 
-                if (nr_slide == 8)
+                if (nr_slide == 9)
                 {
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene(3);// Wechsel in die Galerie
                 }
                 else
                 {
@@ -140,6 +150,10 @@ namespace VR_gallery
 
             //if (String.IsNullOrEmpty(txt_moreInfo))
 
+        }
+        private void BackToMainMenu(InputAction.CallbackContext context)
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }
