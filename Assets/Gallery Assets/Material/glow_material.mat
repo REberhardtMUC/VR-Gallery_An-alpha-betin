@@ -10,16 +10,16 @@ Material:
   m_Name: glow_material
   m_Shader: {fileID: 4800000, guid: 0406db5a14f94604a8c57ccfbc9f3b46, type: 3}
   m_Parent: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
-  m_ModifiedSerializedProperties: 26
+  m_ModifiedSerializedProperties: 2
   m_ValidKeywords:
   - _EMISSION
   - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords:
   - _FLIPBOOKBLENDING_OFF
-  m_LightmapFlags: 1
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap:
     RenderType: Transparent
   disabledShaderPasses:
@@ -30,20 +30,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Ints: []
-    m_Floats:
-    - _Blend: 0
-    - _ColorMode: 0
-    - _Cull: 2
-    - _DstBlend: 10
-    - _DstBlendAlpha: 10
-    - _SrcBlend: 5
-    - _SrcBlendAlpha: 1
-    - _Surface: 1
-    - _ZWrite: 0
+    m_Floats: []
     m_Colors:
-    - _BaseColorAddSubDiff: {r: 1, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 766.9963, g: 726.9893, b: 452.23834, a: 1}
+    - _EmissionColor: {r: 366.6756, g: 347.5496, b: 216.20023, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!114 &3043205842392149896
 MonoBehaviour:
   m_ObjectHideFlags: 11
