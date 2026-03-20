@@ -783,12 +783,30 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Close Menu",
+                    "name": "Toggle Info Menu",
                     "type": "Button",
                     "id": "0e2c2a2a-e25a-4d7c-8962-f2228bdddc28",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Press X",
+                    "type": "Button",
+                    "id": "0efadcf3-fbf4-4827-9717-3c82b92a0943",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Press Y",
+                    "type": "Button",
+                    "id": "886bbc12-743e-4173-ab17-11ebb34ecb95",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
                     "initialStateCheck": false
                 }
             ],
@@ -965,7 +983,29 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Close Menu",
+                    "action": "Toggle Info Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f4760321-e3b3-4885-ab0d-17028a572500",
+                    "path": "<XRController>{LeftHand}/{PrimaryAction}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Press X",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d067e4d4-92c9-46e9-94d2-394f56c1287c",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Press Y",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
