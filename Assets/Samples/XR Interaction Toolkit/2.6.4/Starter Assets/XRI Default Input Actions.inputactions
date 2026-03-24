@@ -990,10 +990,10 @@
                 {
                     "name": "",
                     "id": "f4760321-e3b3-4885-ab0d-17028a572500",
-                    "path": "<XRController>{LeftHand}/{PrimaryAction}",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Generic XR Controller",
                     "action": "Press X",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1001,10 +1001,10 @@
                 {
                     "name": "",
                     "id": "d067e4d4-92c9-46e9-94d2-394f56c1287c",
-                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "path": "<XRController>{LeftHand}/{SecondaryButton}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Generic XR Controller",
                     "action": "Press Y",
                     "isComposite": false,
                     "isPartOfComposite": false
