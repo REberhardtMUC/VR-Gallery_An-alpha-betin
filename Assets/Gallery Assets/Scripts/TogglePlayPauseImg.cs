@@ -25,8 +25,6 @@ public class TogglePlayPauseImg : MonoBehaviour
         //mouseOverPLAY.SetActive(true);
     }
 
-
-
     public void OnMouseOver()
     {
         //mouseOverPLAY.SetActive(true);
@@ -40,13 +38,6 @@ public class TogglePlayPauseImg : MonoBehaviour
             initial++;
         }
         else if (vPlayer.isPlaying == false)
-        {
-            button.image.sprite = img_PlayButton;
-        }
-    }
-    private void Update()
-    {
-        if (vPlayer.isPlaying == false)
         {
             button.image.sprite = img_PlayButton;
         }
