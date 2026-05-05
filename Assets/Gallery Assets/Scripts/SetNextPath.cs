@@ -10,8 +10,8 @@ public class SetNextPath : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        nextPath.SetActive(true);
-        //nextPath.SetActive(false);
+        //nextPath.SetActive(true);
+        nextPath.SetActive(false);
         // TO DO Alle anderen Pfade ausblenden
     }
 }
