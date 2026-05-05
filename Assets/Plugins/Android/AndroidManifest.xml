@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
 	<uses-permission android:name="android.permission.RECORD_AUDIO" tools:node="remove"/>
 	<uses-sdk android:minSdkVersion="29" android:targetSdkVersion="32" />
-	<application>
+	<application android:allowBackup="false">
 		<meta-data android:name="com.oculus.intent.category.VR" android:value="vr_only"/>
 		<meta-data android:name="com.oculus.supportedDevices" android:value="quest2|questpro|quest3" tools:replace="android:value"/>
 		<meta-data android:name="xr_runtime" android:value="OpenXR"/>
