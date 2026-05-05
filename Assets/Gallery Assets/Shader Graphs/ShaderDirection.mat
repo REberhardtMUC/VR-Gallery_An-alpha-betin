@@ -38,14 +38,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _MovementSpeed: 1.5
+    - _MovementSpeed: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _StartTime: 15
-    - _scale: 1
+    - _scale: 0.3
     m_Colors:
-    - _highlightColor: {r: 1, g: 1, b: 1, a: 1}
-    - _surfaceColor: {r: 0.3070933, g: 0.6320754, b: 0.6255772, a: 0.3176471}
+    - _highlightColor: {r: 908.07544, g: 886.65857, b: 886.65857, a: 0.23529412}
+    - _surfaceColor: {r: 0.38064378, g: 0.37905112, b: 0.38223642, a: 0.1764706}
   m_BuildTextureStacks: []
 --- !u!114 &5354304901545177637
 MonoBehaviour:
