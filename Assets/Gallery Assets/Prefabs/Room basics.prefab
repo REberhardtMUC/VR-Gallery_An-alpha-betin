@@ -277,7 +277,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 26a09469601989d4e9394f08594bc5cb, type: 2}
+  - {fileID: 2100000, guid: 90a31ee835231e44fbc07ce4881c36ed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -468,7 +468,7 @@ MonoBehaviour:
   playAtStart: 0
   videoMaterial: {fileID: 0}
   videoClips:
-  - {fileID: 32900000, guid: 1444ca8d47bff52448cc1f5840dcc488, type: 3}
+  - {fileID: 32900000, guid: 16445f7f7ba37b847a7cde30a8f2ca86, type: 3}
 --- !u!1 &5313877177571706896
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +480,7 @@ GameObject:
   - component: {fileID: 3897589797835456974}
   - component: {fileID: 7552602405567089117}
   - component: {fileID: 2833175190066031895}
+  - component: {fileID: 4542168433660947973}
   m_Layer: 0
   m_Name: Context_Collider_SetTxt
   m_TagString: Untagged
@@ -536,14 +537,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtPoetrySnipplet: {fileID: 0}
-  txt_currentVideo: 'Ich bin An-alpha-betin.<br>Ich bete Alphatiere nicht an <br>und
-    kann sie nicht lesen. '
+  txt_currentVideo: Alpha-Tiere sagen gerne:<br>"Ich bin das Alpha<br> und das Omega."
   iconHasMoreInfo: {fileID: 0}
   txtMoreInfo: {fileID: 0}
-  txt_currentUIinfo: 
-  hasMoreInfo: 0
-  btnPlay: {fileID: 8893338358026682419}
+  txt_currentUIinfo: Alpha-Tiere sind die Leittiere im Rudel.
+  hasMoreInfo: 1
   leinwand: {fileID: 3579822714058910443}
+  still_Material: {fileID: 2100000, guid: 90a31ee835231e44fbc07ce4881c36ed, type: 2}
+  btn_PlayPause: {fileID: 8706948031450421122}
+  img_Play: {fileID: 21300000, guid: 73b974d5797ab3445882dde8c0999ed2, type: 3}
+  img_Pause: {fileID: 21300000, guid: ebdfb84eb6b08a643859dce8f51de456, type: 3}
+--- !u!114 &4542168433660947973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5313877177571706896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab298c71d43a73f4f975c0740315d8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextPath: {fileID: 0}
+  paths:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &6438837733956035820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,7 +1298,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Leinwand: {fileID: 3579822714058910443}
-  mouseOverPLAY: {fileID: 7850718203059045313}
   img_PauseButton: {fileID: 21300000, guid: ebdfb84eb6b08a643859dce8f51de456, type: 3}
   img_PlayButton: {fileID: 21300000, guid: 73b974d5797ab3445882dde8c0999ed2, type: 3}
   button: {fileID: 8706948031450421122}

@@ -11,14 +11,15 @@ GameObject:
   - component: {fileID: 7505062007316241080}
   - component: {fileID: 8677269353045252407}
   - component: {fileID: 7086821071714459549}
-  - component: {fileID: 5377739526445981669}
+  - component: {fileID: 2151216291252414499}
   - component: {fileID: 8561489575435247418}
+  - component: {fileID: 7171873910541813328}
   m_Layer: 0
   m_Name: Teleport_Transition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7505062007316241080
 Transform:
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8645912529865383071}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.69122446, z: -0, w: 0.72264016}
+  m_LocalRotation: {x: 0, y: -0.691223, z: 0, w: 0.72264147}
   m_LocalPosition: {x: -39.08, y: -7.95, z: -0.5}
   m_LocalScale: {x: 2, y: -0.1, z: 2}
   m_ConstrainProportionsScale: 1
@@ -85,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5377739526445981669
-SphereCollider:
+--- !u!65 &2151216291252414499
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100,12 +101,12 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.6787088
-  m_Center: {x: 0.000000119100555, y: 0, z: 0.3212913}
+  m_Size: {x: 1.5, y: 40, z: 1.5}
+  m_Center: {x: 0, y: -18.11, z: 0}
 --- !u!114 &8561489575435247418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,3 +219,52 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_TeleportAnchorTransform: {fileID: 7505062007316241080}
+--- !u!114 &7171873910541813328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8645912529865383071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab298c71d43a73f4f975c0740315d8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextPath: {fileID: 0}
+  paths:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

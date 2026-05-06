@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7927734327153709254}
   - component: {fileID: 8119704934704206276}
   - component: {fileID: 4153616049254294731}
+  - component: {fileID: 4761630048471473595}
   m_Layer: 0
   m_Name: Context_Collider_SetTxt
   m_TagString: Untagged
@@ -74,8 +75,60 @@ MonoBehaviour:
   txtMoreInfo: {fileID: 0}
   txt_currentUIinfo: (keine Zusatzinfo)
   hasMoreInfo: 0
-  btnPlay: {fileID: 9073000520185725455}
   leinwand: {fileID: 7748883433854646277}
+  still_Material: {fileID: 0}
+  btn_PlayPause: {fileID: 0}
+  img_Play: {fileID: 0}
+  img_Pause: {fileID: 0}
+--- !u!114 &4761630048471473595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733005289970186383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab298c71d43a73f4f975c0740315d8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextPath: {fileID: 0}
+  paths:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &3022747837513262990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,7 +1234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Leinwand: {fileID: 7748883433854646277}
-  mouseOverPLAY: {fileID: 0}
   img_PauseButton: {fileID: 21300000, guid: ebdfb84eb6b08a643859dce8f51de456, type: 3}
   img_PlayButton: {fileID: 21300000, guid: 73b974d5797ab3445882dde8c0999ed2, type: 3}
   button: {fileID: 9104012227206190526}

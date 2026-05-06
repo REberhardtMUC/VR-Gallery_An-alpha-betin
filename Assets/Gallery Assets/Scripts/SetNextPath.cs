@@ -6,12 +6,20 @@ public class SetNextPath : MonoBehaviour
 {
 
     public GameObject nextPath;
-    // Start is called before the first frame update
+    public List<GameObject> paths;
 
     private void OnTriggerEnter(Collider other)
     {
-        //nextPath.SetActive(true);
-        nextPath.SetActive(false);
-        // TO DO Alle anderen Pfade ausblenden
+        foreach (var path in paths)
+        {
+            if (path.gameObject == nextPath)
+            {
+                path.SetActive(true);
+            }
+            else
+            {
+                path.SetActive(false);
+            }
+        }
     }
 }
